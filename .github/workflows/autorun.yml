@@ -3,7 +3,7 @@ name: Run Autoclaim
 on:
   workflow_dispatch:
 #  schedule:
-#    - cron: '0 */4 * * *'
+#    - cron: '0 */3 * * *'
 
 concurrency:
   group: 'pythonC'  # 设置唯一的组ID
@@ -13,7 +13,7 @@ jobs:
   Notpixel:
     runs-on: ubuntu-latest
     continue-on-error: true
-    timeout-minutes: 225
+    timeout-minutes: 150
     if: true
     env:
       WP_CONFIG: ${{ secrets.WARP_CONFIG }}
@@ -63,7 +63,7 @@ jobs:
   Bums:
     runs-on: ubuntu-latest
     continue-on-error: true
-    timeout-minutes: 225
+    timeout-minutes: 150
     env:
       WP_CONFIG: ${{ secrets.WARP_CONFIG }}
       SESSION_CONFIG: ${{ secrets.SESSION_CONFIG }}
