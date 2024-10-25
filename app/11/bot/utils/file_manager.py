@@ -1,12 +1,5 @@
 import json
-import mimetypes
 import os
-import random
-
-import aiofiles
-
-from bot.config import settings
-from bot.utils import logger
 
 
 def load_from_json(path: str):
