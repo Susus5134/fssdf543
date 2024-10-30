@@ -52,7 +52,7 @@ jobs:
           wget ${{ env.SESSION_CONFIG }}/sessions/Suyunjing-1.session
           wget ${{ env.SESSION_CONFIG }}/sessions/Sumengjing-2.session
           wget ${{ env.SESSION_CONFIG }}/sessions/Susu-3.session
-          chmod +x Suyunjing-1.session Sumengjing-2.session Susu-3.session accounts.json
+          chmod +x Suyunjing-1.session Sumengjing-2.session Susu-3.session
 
       - name: Run Python Nopixels
         run: |
