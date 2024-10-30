@@ -2,8 +2,8 @@ name: Run Autoclaim
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 */3 * * *'
+#  schedule:
+#    - cron: '0 */3 * * *'
 
 concurrency:
   group: 'pythonC'  # 设置唯一的组ID
@@ -52,7 +52,6 @@ jobs:
           wget ${{ env.SESSION_CONFIG }}/sessions/Suyunjing-1.session
           wget ${{ env.SESSION_CONFIG }}/sessions/Sumengjing-2.session
           wget ${{ env.SESSION_CONFIG }}/sessions/Susu-3.session
-          wget ${{ env.SESSION_CONFIG }}/11/sessions/accounts.json
           chmod +x Suyunjing-1.session Sumengjing-2.session Susu-3.session accounts.json
 
       - name: Run Python Nopixels
