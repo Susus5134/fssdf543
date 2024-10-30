@@ -1,53 +1,70 @@
-[![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/notpixel/app?startapp=f7253650410)
+[![Static Badge](https://img.shields.io/badge/Telegram-Channel-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/hidden_coding)
+
+[![Static Badge](https://img.shields.io/badge/Telegram-Chat-yes?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/hidden_codding_chat)
+
+[![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/notpixel/app?startapp=f355876562)
+
+# 🎨AUTO FARM FOR NOTPIXEL 🎨
+
+> [!WARNING]
+> As a payment for this script I take a part of your referrals, to remove this behavior or reduce the percentage of referrals you can customize this variable PERCENT_OF_REFERRALS_FOR_CREATORS_OF_THE_SOFT.
+
+> [!WARNING]
+> I am not responsible for your account. Please consider the potential risks before using this bot.
+
+## MY OTHER BOTS
+
+### 💩 [Boinkers](https://github.com/YarmolenkoD/boinkers)
+### 🚀 [Moonbix](https://github.com/YarmolenkoD/moonbix) [NOT WORKING]
 
 ## Recommendation before use
 
-# 🔥🔥 Use PYTHON 3.10 🔥🔥
+# 🔥🔥 PYTHON version must be 3.10 🔥🔥
 
 > 🇷 🇺 README in russian available [here](README-RU.md)
 
 ## Features  
-| Feature                               | Supported |
-|---------------------------------------|:---------:|
-| Multithreading                        |     ✅     |
-| Proxy binding to session              |     ✅     |
-| User-Agent binding to session         |     ✅     |
-| Support for tdata / pyrogram .session |     ✅     |
-| Registration in bot                   |     ✅     |
-| Auto-paint                            |     ✅     |
-| Auto-tasks                            |     ✅     |
-| Auto-claim mining rewards             |     ✅     |
-| Auto-upgrade boosters                 |     ✅     |
-| Night sleep mode                      |     ✅     |
-| Analytics game events                 |     ✅     |
+|                      Feature                       | Supported |
+|:--------------------------------------------------:|:---------:|
+|                   Multithreading                   |     ✅     |
+|              Proxy binding to session              |     ✅     |
+|           Support for pyrogram .session            |     ✅     |
+| Auto-register your account with your referral code |     ✅     |
+|                     X3 POINTS                      |     ✅     |
+|                     Auto tasks                     |     ✅     |
+|                     Auto games                     |     ✅     |
+|                    Авто drawing                    |     ✅     |
+|                    Авто upgrade                    |     ✅     |
+|              Авто claiming of reward               |     ✅     |
 
 
-
-
-## [Settings](https://github.com/Desamod/NotPixelBot/blob/master/.env-example/)
-| Settings                   |                                 Description                                 |
-|----------------------------|:---------------------------------------------------------------------------:|
-| **API_ID / API_HASH**      | Platform data from which to run the Telegram session (by default - android) |
-| **SLEEP_TIME**             |            Sleep time between cycles (by default - [3000, 8000])            |
-| **START_DELAY**            |           Delay between sessions at start (by default - [5, 60])            |
-| **AUTO_PAINT**             |                      Auto painting (by default - True)                      |
-| **EXTRA_POINTS_MODE**      |               Drawing art with x3 points (by default - False)               |
-| **AUTO_UPGRADE**           |                  Auto upgrade boosters (by default - True)                  |
-| **AUTO_MINING**            |                Auto claim mining reward (by default - True)                 |
-| **AUTO_TASK**              |                       Auto tasks (by default - True)                        |
-| **AUTO_UPGRADE_PAINT**     |                Auto upgrade paint reward (by default - True)                |
-| **MAX_PAINT_LEVEL**        |                Max level for paint booster (by default - 5)                 |
-| **AUTO_UPGRADE_CHARGE**    |               Auto upgrade recharge speed (by default - True)               |
-| **MAX_CHARGE_LEVEL**       |               Max level for recharge booster (by default - 5)               |
-| **AUTO_UPGRADE_ENERGY**    |                Auto upgrade energy limit (by default - True)                |
-| **MAX_ENERGY_LEVEL**       |                Max level for energy booster (by default - 2)                |
-| **USE_RANDOM_COLOR**       |               Use random color from game (by default - True)                |
-| **OWN_COLOR**              |        Own color if USE_RANDOM_COLOR is False (by default - #FFFFFF)        |
-| **NIGHT_SLEEP**            |                  Extra sleep at night (by default - True)                   |
-| **NIGHT_SLEEP_START_TIME** |          Time (hour) when Night mode starts (by default - [0, 2])           |
-| **NIGHT_SLEEP_END_TIME**   |           Time (hour) when Night mode ends (by default - [5, 7])            |
-| **REF_ID**                 |                          Ref link for registration                          |
-
+## [Settings](https://github.com/YarmolenkoD/notpixel/blob/main/.env-example/)
+|                     Settings                      |                                                         Description                                                          |
+|:-------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------:|
+|               **API_ID / API_HASH**               |                           Platform data from which to run the Telegram session (default - android)                           |
+|            **USE_RANDOM_DELAY_IN_RUN**            |                                                      Name saying itself                                                      |
+|              **RANDOM_DELAY_IN_RUN**              |                                      Random seconds delay for ^^^ (default is [5, 30])                                       |
+|             **SLEEP_TIME_IN_MINUTES**             |                                 Random minutes delay between cycles (default is [120, 180])                                  |
+|                    **USE_REF**                    |                                 Register accounts with ur referral or not (default - False)                                  |
+|                    **REF_ID**                     |                           Your referral argument (comes after app/startapp? in your referral link)                           |
+| **PERCENT_OF_REFERRALS_FOR_CREATORS_OF_THE_SOFT** |                                 Give some referrals for creators of the soft (default - 15)                                  |
+|              **USE_PROXY_FROM_FILE**              |                         Whether to use a proxy from the `bot/config/proxies.txt` file (True / False)                         |
+|               **ENABLE_AUTO_TASKS**               |                                               Enable auto tasks (True / False)                                               |
+|               **ENABLE_AUTO_DRAW**                |                                              Enable auto drawing (True / False)                                              |
+|        **UNSAFE_ENABLE_JOIN_TG_CHANNELS**         |                                [!!UNSAFE!!] Enable auto joining to tg channels (True / False)                                |
+|              **ENABLE_CLAIM_REWARD**              |                                         Enable auto claim of rewards (True / False)                                          |
+|              **ENABLE_AUTO_UPGRADE**              |                                             Enable auto upgrading (True / False)                                             |
+|                  **ENABLE_SSL**                   | Enable verification of ssl certificates (sometimes it can help with SSL: CERTIFICATE_VERIFY_FAILED error)  (default - False) |
+|       **ENABLE_AUTO_JOIN_TO_SQUAD_CHANNEL**       |                                 Enable auto join to squad telegram channel (default - False)                                 |
+|           **ENABLE_AUTO_JOIN_TO_SQUAD**           |                                          Enable auto join to squad (default - True)                                          |
+|                  **SQUAD_SLUG**                   |                               Squad slug [telegram channel slug] (default - notpixel_raiders)                                |
+|               **DISABLE_IN_NIGHT**                |                                          Disable script in night (default - False)                                           |
+|                  **NIGHT_TIME**                   |                                          Night time [from, to] (default - [23, 6])                                           |
+|            **ENABLE_SERVER_MODE=True**            |                   Stable mode to get more x3 but work only with few hardcoded templates (default - False)                    |
+|        **ENABLE_CHECK_UPDATED_IMAGE_MODE**        |                                      Experimental mode to get more x3 (default - False)                                      |
+|         **ENABLE_RANDOM_CUSTOM_TEMPLATE**         |                             Set random template to each account to get more x3 (default - True)                              |
+|          **ENABLE_DRAW_CUSTOM_TEMPLATE**          |                           Draw your custom template from CUSTOM_TEMPLATE_ID field (default - True)                           |
+|              **CUSTOM_TEMPLATE_ID**               |                                           Your template ID (default - 1440524069)                                            |
 
 ## Quick Start 📚
 
@@ -63,10 +80,10 @@ Before you begin, make sure you have the following installed:
 3. Record the API_ID and API_HASH provided after registering your application in the .env file.
 
 ## Installation
-You can download the [**repository**](https://github.com/Desamod/NotPixelBot) by cloning it to your system and installing the necessary dependencies:
+You can download the [**repository**](https://github.com/YarmolenkoD/notpixel) by cloning it to your system and installing the necessary dependencies:
 ```shell
-git clone https://github.com/Desamod/NotPixelBot
-cd NotPixelBot
+git clone https://github.com/YarmolenkoD/notpixel.git
+cd notpixel
 ```
 
 Then you can do automatic installation by typing:
@@ -93,12 +110,13 @@ python3 main.py
 
 You can also use arguments for quick start, for example:
 ```shell
-~/NotPixelBot >>> python3 main.py --action (1/2)
+~/notpixel >>> python3 main.py --action (1/2)
 # Or
-~/NotPixelBot >>> python3 main.py -a (1/2)
+~/notpixel >>> python3 main.py -a (1/2)
 
-# 1 - Run clicker
-# 2 - Creates a session
+# 1 - Start drawing 🎨️
+# 2 - Creates a session 👨‍🎨
+# 3 - Get actual templates list 🖼
 ```
 
 # Windows manual installation
@@ -113,35 +131,10 @@ python main.py
 
 You can also use arguments for quick start, for example:
 ```shell
-~/NotPixelBot >>> python main.py --action (1/2)
+~/notpixel >>> python main.py --action (1/2)
 # Or
-~/NotPixelBot >>> python main.py -a (1/2)
+~/notpixel >>> python main.py -a (1/2)
 
-# 1 - Run clicker
-# 2 - Creates a session
+# 1 - Start drawing 🎨️
+# 2 - Creates a session 👨‍🎨
 ```
-
-### Usages
-When you first launch the bot, create a session for it using the 'Creates a session' command. It will create a 'sessions' folder in which all accounts will be stored, as well as a file accounts.json with configurations.
-If you already have sessions, simply place them in a folder 'sessions' and run the clicker. During the startup process you will be able to configure the use of a proxy for each session.
-User-Agent is created automatically for each account.
-
-Here is an example of what accounts.json should look like:
-```shell
-[
-  {
-    "session_name": "name_example",
-    "user_agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.165 Mobile Safari/537.36",
-    "proxy": "type://user:pass:ip:port"  # "proxy": "" - if you dont use proxy
-  }
-]
-```
-
-### Contacts
-
-For support or questions, you can contact me
-
-[![Static Badge](https://img.shields.io/badge/Telegram-Channel-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/desforge_cryptwo)
-
-
-
