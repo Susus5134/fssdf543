@@ -59,7 +59,7 @@ jobs:
           cd app/11
           ./venv/bin/python3 main.py -a 1  # 运行第三个Python脚本
 
-  Bums:
+  Hrum:
     runs-on: ubuntu-latest
     continue-on-error: true
     timeout-minutes: 150
@@ -97,7 +97,7 @@ jobs:
           wget ${{ env.SESSION_CONFIG }}/12/database.sqlite3
           chmod +x .env database.sqlite3
 
-      - name: Run Bums
+      - name: Run Hrum
         run: |
           cd app/12
           ./venv/bin/python3 main.py -a 2  # 运行第三个Python脚本
