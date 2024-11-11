@@ -30,7 +30,6 @@ jobs:
       - name: Connect InnerWeb
         run: |
           mkdir app
-          cd app
           mkdir app/warp
           cd app/warp
           wget https://github.com/Suyunmeng/pfile/releases/download/public-packages/web.js
@@ -72,7 +71,6 @@ jobs:
       - name: Connect InnerWeb
         run: |
           mkdir app
-          cd app
           mkdir app/warp
           cd app/warp
           wget https://github.com/Suyunmeng/pfile/releases/download/public-packages/web.js
