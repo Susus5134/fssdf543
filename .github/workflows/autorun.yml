@@ -47,7 +47,7 @@ jobs:
           chmod -R +x ./
           bash build.sh
 
-      - name: Run Dropee
+      - name: Run Notpixels
         run: |
           cd app/11
           bash run.sh
@@ -88,7 +88,7 @@ jobs:
           chmod -R +x ./
           bash build.sh
 
-      - name: Run Dropee
+      - name: Run Hrums
         run: |
           cd app/12
           bash run.sh
