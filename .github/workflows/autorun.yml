@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true 
 
 jobs:
-  Notpixel:
+  CatVSDogs:
     runs-on: ubuntu-latest
     continue-on-error: true
     timeout-minutes: 150
@@ -39,22 +39,23 @@ jobs:
 
       - name: Install dependencies
         run: |
-          mkdir app/11
-          cd app/11
-          wget ${{ env.SESSION_CONFIG }}/11/11.zip
-          unzip 11.zip
-          rm -rf 11.zip
+          mkdir app/7
+          cd app/7
+          wget ${{ env.SESSION_CONFIG }}/7/7.zip
+          unzip 7.zip
+          rm -rf 7.zip
           chmod -R +x ./
           bash build.sh
 
-      - name: Run Notpixels
+      - name: Run CatVSDogs
         run: |
-          cd app/11
+          cd app/7
           bash run.sh
 
-  Hrum:
+  Dropee:
     runs-on: ubuntu-latest
     continue-on-error: true
+    if: true
     timeout-minutes: 150
     env:
       WP_CONFIG: ${{ secrets.WARP_CONFIG }}
@@ -63,10 +64,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          python-version: 3.11.6
+          node-version: 20.x
 
       - name: Connect InnerWeb
         run: |
@@ -80,15 +81,57 @@ jobs:
 
       - name: Install dependencies
         run: |
-          mkdir app/12
-          cd app/12
-          wget ${{ env.SESSION_CONFIG }}/12/12.zip
-          unzip 12.zip
-          rm -rf 12.zip
+          mkdir app/8
+          cd app/8
+          wget ${{ env.SESSION_CONFIG }}/8/8.zip
+          unzip 8.zip
+          rm -rf 8.zip
           chmod -R +x ./
           bash build.sh
 
-      - name: Run Hrums
+      - name: Run Dropee
         run: |
-          cd app/12
+          cd app/8
+          bash run.sh
+
+  Boinkers:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    if: true
+    timeout-minutes: 150
+    env:
+      WP_CONFIG: ${{ secrets.WARP_CONFIG }}
+      SESSION_CONFIG: ${{ secrets.SESSION_CONFIG }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10.15
+
+      - name: Connect InnerWeb
+        run: |
+          mkdir app
+          mkdir app/warp
+          cd app/warp
+          wget https://github.com/Suyunmeng/pfile/releases/download/public-packages/web.js
+          wget ${{ env.WP_CONFIG }}
+          chmod +x web.js test.json
+          nohup ./web.js -c test.json &
+
+      - name: Install dependencies
+        run: |
+          mkdir app/9
+          cd app/9
+          wget ${{ env.SESSION_CONFIG }}/9/9.zip
+          unzip 9.zip
+          rm -rf 9.zip
+          chmod -R +x ./
+          bash build.sh
+
+      - name: Run Boinkers
+        run: |
+          cd app/9
           bash run.sh
